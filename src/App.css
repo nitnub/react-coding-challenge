@@ -10,14 +10,14 @@ a:visited {
 .App {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 64px 1fr 240px;
+  grid-template-rows: 48px 48px 1fr;
   height: 100vh;
   width: 100vw;
   justify-content: space-between;
 }
 
 .container {
-  width: 768px
+  width: 1024px
 }
 
 
@@ -38,14 +38,60 @@ a:visited {
 
 .header .container {
   display: flex;
-  
+  align-items: center;
   justify-content: space-between;
 }
 
-/*  */
-.content-container {
-  
+.site-brand {
+  font-size: 2em;
+  color:rgb(217, 220, 223);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px
+}
+
+.login-btn {
+  background: none;
+  color:rgb(217, 220, 223);
+  border: none;
+  padding: 4px 8px;
+}
+
+.trial-btn {
+  background-color: #3b3b3b;
+  color:rgb(217, 220, 223);
+  border: none;
+  padding: 2px 8px;
+}
+
+
+
+/* Main Container */
+
+.content-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
+  background-color: #3b3b3b;
+  color:rgb(217, 220, 223);
+  font-size: 1.75em;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-self:flex-start;
+  width: 100vw;
+  margin: 24px 0;
+  align-items: center;
+}
+
+.section-header {
+  background-color: #3b3b3b;
 }
 
 .card {
@@ -83,31 +129,38 @@ a:visited {
   z-index: 10;
 }
 
-.title {
-
-}
 
 /* Footer */
 
 .footer {
   background-color: #1e1e1e;
   color: gray;
-  height: 240px;
+  height: 180px;
   align-self: end;
   align-content: center;
 }
 
 .footer-text {
-  margin: 32px 0 32px 
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0 32px; 
+  gap: 1px;
+  font-size: .8em;
 }
 
 .footer-link {
-  padding: 0px 8px;
+  /* padding: 0px 8px; */
 }
 
 .link-list {
   display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+}
 
+.socials {
+  display: flex;
+  gap: 16px;
 }
 
 .social {

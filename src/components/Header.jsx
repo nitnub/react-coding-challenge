@@ -1,10 +1,10 @@
-const Header = () => {
+const Header = ({ navClickHandler }) => {
   return (
     
       <div className="header">
         <div className="container">
         <div className="site-brand">
-          <div>DEMO Streaming</div>
+          <div onClick={navClickHandler}>DEMO Streaming</div>
         </div>
         <div className="header-nav">
           <button className="btn login-btn">Log In</button>

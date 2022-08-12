@@ -33,45 +33,54 @@ const ContentView = () => {
   }, []);
 
   return (
-    <div className="content-container">
-      <div className="container">
-        <div>
-          Popular{' '}
-          {view === VIEWS.MAIN || view === VIEWS.SERIES ? view : 'Movies'}
-        </div>
-        <div className="card-field">
-          {view === VIEWS.MAIN ? (
-            <>
-              <Card
-                poster={placeholderPoster}
-                title={'Popular Series'}
-                overlay={'SERIES'}
-                onClick={() => setView(VIEWS.SERIES)}
-              />
-              <Card
-                poster={placeholderPoster}
-                title={'Popular Movies'}
-                overlay={'MOVIES'}
-                onClick={() => setView(VIEWS.MOVIE)}
-              />
-            </>
-          ) : (
-            dataArray.map((entry) => {
-              if (entry.programType === view.toLowerCase()) {
-                return (
-                  <Card
-                    poster={entry.images['Poster Art'].url || placeholderPoster}
-                    title={entry.title}
-                    defaultPoster={placeholderPoster}
-                    type={view}
-                  />
-                );
-              }
-            })
-          )}
+    <>
+      <div className="content-header">
+        <div className="container">
+          <div className="section-header">
+            Popular{' '}
+            {view === VIEWS.MAIN || view === VIEWS.SERIES ? view : 'Movies'}
+          </div>
         </div>
       </div>
-    </div>
+      <div className="content-container">
+        <div className="container">
+          <div className="card-field">
+            {view === VIEWS.MAIN ? (
+              <>
+                <Card
+                  poster={placeholderPoster}
+                  title={'Popular Series'}
+                  overlay={'SERIES'}
+                  onClick={() => setView(VIEWS.SERIES)}
+                />
+                <Card
+                  poster={placeholderPoster}
+                  title={'Popular Movies'}
+                  overlay={'MOVIES'}
+                  onClick={() => setView(VIEWS.MOVIE)}
+                />
+              </>
+            ) : (
+              dataArray.map((entry, index) => {
+                if (entry.programType === view.toLowerCase()) {
+                  return (
+                    <Card
+                      key={index}
+                      poster={
+                        entry.images['Poster Art'].url || placeholderPoster
+                      }
+                      title={entry.title}
+                      defaultPoster={placeholderPoster}
+                      type={view}
+                    />
+                  );
+                }
+              })
+            )}
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

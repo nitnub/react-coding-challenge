@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import ContentView from './components/ContentView';
 import Footer from './components/Footer';
 
+
 function App() {
+
   return (
     <div className="App">
       <Header />

@@ -29,7 +29,7 @@ const Footer = () => {
               <a href="">Manage Account</a>
             </div>
           </div>
-          <div>Copyright 2016 DEMO Streaming. All Rights Reserved.</div>
+          <div className="copyright">Copyright 2016 DEMO Streaming. All Rights Reserved.</div>
         </div>
         <div className="external-links">
           <div className="socials">
@@ -114,12 +114,12 @@ const Footer = () => {
                     gradientTransform="matrix(.8 0 0 -.8 0 161.6)"
                     id="i"
                   >
-                    <stop offset="0" stop-color="#00a0ff" />
-                    <stop offset=".007" stop-color="#00a1ff" />
-                    <stop offset=".26" stop-color="#00beff" />
-                    <stop offset=".512" stop-color="#00d2ff" />
-                    <stop offset=".76" stop-color="#00dfff" />
-                    <stop offset="1" stop-color="#00e3ff" />
+                    <stop offset="0" stopColor="#00a0ff" />
+                    <stop offset=".007" stopColor="#00a1ff" />
+                    <stop offset=".26" stopColor="#00beff" />
+                    <stop offset=".512" stopColor="#00d2ff" />
+                    <stop offset=".76" stopColor="#00dfff" />
+                    <stop offset="1" stopColor="#00e3ff" />
                   </linearGradient>
                   <linearGradient
                     x1="43.834"
@@ -130,10 +130,10 @@ const Footer = () => {
                     gradientTransform="matrix(.8 0 0 -.8 0 161.6)"
                     id="j"
                   >
-                    <stop offset="0" stop-color="#ffe000" />
-                    <stop offset=".409" stop-color="#ffbd00" />
-                    <stop offset=".775" stop-color="orange" />
-                    <stop offset="1" stop-color="#ff9c00" />
+                    <stop offset="0" stopColor="#ffe000" />
+                    <stop offset=".409" stopColor="#ffbd00" />
+                    <stop offset=".775" stopColor="orange" />
+                    <stop offset="1" stopColor="#ff9c00" />
                   </linearGradient>
                   <linearGradient
                     x1="34.827"
@@ -144,8 +144,8 @@ const Footer = () => {
                     gradientTransform="matrix(.8 0 0 -.8 0 161.6)"
                     id="k"
                   >
-                    <stop offset="0" stop-color="#ff3a44" />
-                    <stop offset="1" stop-color="#c31162" />
+                    <stop offset="0" stopColor="#ff3a44" />
+                    <stop offset="1" stopColor="#c31162" />
                   </linearGradient>
                   <linearGradient
                     x1="17.297"
@@ -156,11 +156,11 @@ const Footer = () => {
                     gradientTransform="matrix(.8 0 0 -.8 0 161.6)"
                     id="l"
                   >
-                    <stop offset="0" stop-color="#32a071" />
-                    <stop offset=".069" stop-color="#2da771" />
-                    <stop offset=".476" stop-color="#15cf74" />
-                    <stop offset=".801" stop-color="#06e775" />
-                    <stop offset="1" stop-color="#00f076" />
+                    <stop offset="0" stopColor="#32a071" />
+                    <stop offset=".069" stopColor="#2da771" />
+                    <stop offset=".476" stopColor="#15cf74" />
+                    <stop offset=".801" stopColor="#06e775" />
+                    <stop offset="1" stopColor="#00f076" />
                   </linearGradient>
                   <clipPath id="a">
                     <path d="M0 0h124v48H0V0z" />
@@ -173,8 +173,8 @@ const Footer = () => {
                     height="1"
                     id="m"
                   >
-                    <g clip-path="url(#a)">
-                      <path d="M0 0h124v48H0V0z" fill-opacity=".2" />
+                    <g clipPath="url(#a)">
+                      <path d="M0 0h124v48H0V0z" fillOpacity=".2" />
                     </g>
                   </mask>
                   <clipPath id="n">
@@ -190,7 +190,7 @@ const Footer = () => {
                     height="48"
                     id="o"
                   >
-                    <g clip-path="url(#b)">
+                    <g clipPath="url(#b)">
                       <path d="M29.625 20.695l-11.613-6.597c-.65-.37-1.23-.344-1.606-.008l-.058-.063.058-.058c.375-.337.957-.36 1.606.01L29.7 20.62l-.075.075z" />
                     </g>
                   </pattern>
@@ -205,8 +205,8 @@ const Footer = () => {
                     height="1"
                     id="p"
                   >
-                    <g clip-path="url(#c)">
-                      <path d="M0 0h124v48H0V0z" fill-opacity=".12" />
+                    <g clipPath="url(#c)">
+                      <path d="M0 0h124v48H0V0z" fillOpacity=".12" />
                     </g>
                   </mask>
                   <clipPath id="q">
@@ -222,7 +222,7 @@ const Footer = () => {
                     height="48"
                     id="r"
                   >
-                    <g clip-path="url(#d)">
+                    <g clipPath="url(#d)">
                       <path d="M16.348 14.145c-.235.246-.37.628-.37 1.125v-.118c0-.496.135-.88.37-1.125l.058.063-.058.055z" />
                     </g>
                   </pattern>
@@ -237,8 +237,8 @@ const Footer = () => {
                     height="1"
                     id="s"
                   >
-                    <g clip-path="url(#e)">
-                      <path d="M0 0h124v48H0V0z" fill-opacity=".12" />
+                    <g clipPath="url(#e)">
+                      <path d="M0 0h124v48H0V0z" fillOpacity=".12" />
                     </g>
                   </mask>
                   <clipPath id="t">
@@ -254,7 +254,7 @@ const Footer = () => {
                     height="48"
                     id="u"
                   >
-                    <g clip-path="url(#f)">
+                    <g clipPath="url(#f)">
                       <path d="M33.613 22.96l-3.988-2.265.074-.074 3.913 2.224c.56.316.836.734.836 1.156-.048-.38-.333-.75-.837-1.04z" />
                     </g>
                   </pattern>
@@ -269,8 +269,8 @@ const Footer = () => {
                     height="1"
                     id="v"
                   >
-                    <g clip-path="url(#g)">
-                      <path d="M0 0h124v48H0V0z" fill-opacity=".25" />
+                    <g clipPath="url(#g)">
+                      <path d="M0 0h124v48H0V0z" fillOpacity=".25" />
                     </g>
                   </mask>
                   <clipPath id="w">
@@ -286,7 +286,7 @@ const Footer = () => {
                     height="48"
                     id="x"
                   >
-                    <g clip-path="url(#h)">
+                    <g clipPath="url(#h)">
                       <path
                         d="M18.012 33.902l15.6-8.863c.51-.29.79-.66.837-1.04 0 .418-.278.836-.837 1.156l-15.6 8.864c-1.118.632-2.036.105-2.036-1.176v-.114c0 1.278.918 1.805 2.035 1.172z"
                         fill="#fff"
@@ -303,8 +303,8 @@ const Footer = () => {
                   d="M45.934 16.195c0 .668-.2 1.203-.594 1.602-.453.473-1.043.71-1.766.71-.69 0-1.28-.24-1.765-.718-.486-.485-.728-1.08-.728-1.79s.242-1.305.727-1.785a2.414 2.414 0 0 1 1.764-.723c.344 0 .672.07.985.203.31.133.565.313.75.535l-.42.422c-.32-.38-.757-.566-1.316-.566-.504 0-.94.176-1.312.53-.367.357-.55.818-.55 1.384s.183 1.03.55 1.387c.37.35.808.53 1.312.53.535 0 .985-.18 1.34-.534.234-.235.367-.56.402-.973h-1.742v-.578h2.324c.028.125.036.246.036.363zM49.62 14.19H47.44v1.52h1.968v.58h-1.968v1.52h2.183v.588h-2.8v-4.796h2.8v.59zM52.223 18.398h-.618V14.19h-1.34v-.588h3.298v.59h-1.34v4.206zM55.95 18.398v-4.796h.616v4.796h-.617zM59.3 18.398h-.612V14.19h-1.344v-.588h3.3v.59h-1.343v4.206zM66.887 17.78c-.473.486-1.06.728-1.758.728-.704 0-1.29-.242-1.763-.727-.472-.483-.707-1.077-.707-1.78 0-.703.235-1.297.707-1.78.473-.486 1.06-.728 1.762-.728.694 0 1.28.242 1.753.73.476.49.71 1.08.71 1.778 0 .703-.234 1.297-.706 1.78zm-3.063-.4c.356.358.79.538 1.305.538.51 0 .948-.18 1.3-.54.355-.358.535-.82.535-1.378 0-.56-.18-1.02-.535-1.38-.352-.358-.79-.538-1.3-.538-.517 0-.95.18-1.306.54-.355.358-.535.82-.535 1.378 0 .56.18 1.02.534 1.38zM68.46 18.398v-4.796h.75l2.333 3.73h.027l-.027-.922v-2.808h.617v4.796h-.644l-2.442-3.914h-.027l.027.926v2.988h-.613z"
                   fill="#fff"
                   stroke="#fff"
-                  stroke-width=".16"
-                  stroke-miterlimit="10"
+                  strokeWidth=".16"
+                  strokeMiterlimit="10"
                   transform="matrix(1.253 0 0 1.2384 -9.796 -9.594)"
                 />
                 <path
@@ -335,7 +335,7 @@ const Footer = () => {
                   mask="url(#m)"
                   transform="matrix(1.253 0 0 -1.2384 -9.796 49.85)"
                 >
-                  <g clip-path="url(#n)">
+                  <g clipPath="url(#n)">
                     <path d="M0 0h124v48H0V0z" fill="url(#o)" />
                   </g>
                 </g>
@@ -343,7 +343,7 @@ const Footer = () => {
                   mask="url(#p)"
                   transform="matrix(1.253 0 0 -1.2384 -9.796 49.85)"
                 >
-                  <g clip-path="url(#q)">
+                  <g clipPath="url(#q)">
                     <path d="M0 0h124v48H0V0z" fill="url(#r)" />
                   </g>
                 </g>
@@ -352,7 +352,7 @@ const Footer = () => {
                     mask="url(#s)"
                     transform="matrix(1.253 0 0 -1.2384 -9.796 49.85)"
                   >
-                    <g clip-path="url(#t)">
+                    <g clipPath="url(#t)">
                       <path d="M0 0h124v48H0V0z" fill="url(#u)" />
                     </g>
                   </g>
@@ -362,7 +362,7 @@ const Footer = () => {
                     mask="url(#v)"
                     transform="matrix(1.253 0 0 -1.2384 -9.796 49.85)"
                   >
-                    <g clip-path="url(#w)">
+                    <g clipPath="url(#w)">
                       <path d="M0 0h124v48H0V0z" fill="url(#x)" />
                     </g>
                   </g>
