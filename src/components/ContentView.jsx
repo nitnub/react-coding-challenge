@@ -5,7 +5,7 @@ const API_URL = './feed/sample.json';
 const placeholderPoster = '../assets/placeholder.png';
 const VIEWS = {
   MAIN: 'Titles',
-  MOVIE: 'Movies',
+  MOVIE: 'Movie',
   SERIES: 'Series',
 };
 
@@ -34,33 +34,42 @@ const ContentView = () => {
 
   return (
     <div className="content-container">
-      <div>Popular {view}</div>
-      <div className="card-field">
-        {view === VIEWS.MAIN ? (
-          <>
-            <Card
-              poster={placeholderPoster}
-              title={'Popular Series'}
-              overlay={'SERIES'}
-              onClick={() => setView(VIEWS.SERIES)}
-            />
-            <Card
-              poster={placeholderPoster}
-              title={'Popular Movies'}
-              overlay={'MOVIES'}
-            />
-          </>
-        ) : (
-          dataArray.map((entry) => {
-            return (
+      <div className="container">
+        <div>
+          Popular{' '}
+          {view === VIEWS.MAIN || view === VIEWS.SERIES ? view : 'Movies'}
+        </div>
+        <div className="card-field">
+          {view === VIEWS.MAIN ? (
+            <>
               <Card
-                poster={entry.images['Poster Art'].url || placeholderPoster}
-                title={entry.title}
-                defaultPoster={placeholderPoster}
+                poster={placeholderPoster}
+                title={'Popular Series'}
+                overlay={'SERIES'}
+                onClick={() => setView(VIEWS.SERIES)}
               />
-            );
-          })
-        )}
+              <Card
+                poster={placeholderPoster}
+                title={'Popular Movies'}
+                overlay={'MOVIES'}
+                onClick={() => setView(VIEWS.MOVIE)}
+              />
+            </>
+          ) : (
+            dataArray.map((entry) => {
+              if (entry.programType === view.toLowerCase()) {
+                return (
+                  <Card
+                    poster={entry.images['Poster Art'].url || placeholderPoster}
+                    title={entry.title}
+                    defaultPoster={placeholderPoster}
+                    type={view}
+                  />
+                );
+              }
+            })
+          )}
+        </div>
       </div>
     </div>
   );

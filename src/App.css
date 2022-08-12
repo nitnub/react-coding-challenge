@@ -1,23 +1,56 @@
 .body {
   box-sizing: border-box;
 }
-.App {
-  display: flex;
-  flex-direction: column;
-  /* background-color: red; */
-  height: 100vh;
+
+a:visited {
+  color:gray;
+  text-decoration: none;
 }
 
-.header {
+.App {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 64px 1fr 240px;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.container {
+  width: 768px
+}
+
+
+.header,
+.content-container,
+.footer {
   display: flex;
+  justify-content :center;
+}
+
+
+.header {
   padding: 12px;
   background-color: #0097fd;
   background-image: linear-gradient(#0097fd, #006bff);
   border-bottom: 1px solid #0a59d0;
+}
+
+.header .container {
+  display: flex;
+  
   justify-content: space-between;
 }
 
 /*  */
+.content-container {
+  
+  width: 100vw;
+}
+
+.card {
+  width: 160px; 
+}
 
 .card-field {
   display: flex;
@@ -39,7 +72,7 @@
   position: absolute;
   width: 160px; 
   align-self: center;
-  background-image: url('./assets/placeholder.png')
+  /* background-image: url('./assets/placeholder.png') */
 }
 
 .overlay {
@@ -50,3 +83,50 @@
   z-index: 10;
 }
 
+.title {
+
+}
+
+/* Footer */
+
+.footer {
+  background-color: #1e1e1e;
+  color: gray;
+  height: 240px;
+  align-self: end;
+  align-content: center;
+}
+
+.footer-text {
+  margin: 32px 0 32px 
+}
+
+.footer-link {
+  padding: 0px 8px;
+}
+
+.link-list {
+  display: flex;
+
+}
+
+.social {
+  width: 36px;
+  height: 36px;
+}
+
+.external-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-stores {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
+  gap: 16px;
+}
+
+.store {
+}
