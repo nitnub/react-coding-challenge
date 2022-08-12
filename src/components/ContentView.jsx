@@ -1,21 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import Card from './Card'
+import Card from './Card';
 
 const API_URL = './feed/sample.json';
+const placeholderPoster = '../assets/placeholder.png';
 const VIEWS = {
   MAIN: 'Titles',
   MOVIE: 'Movies',
   SERIES: 'Series',
-}
-
-
-
+};
 
 const ContentView = () => {
   const [dataArray, setDataArray] = useState([]);
   const [view, setView] = useState(VIEWS.MAIN);
-
-
 
   useEffect(() => {
     const getEntryList = async () => {
@@ -38,23 +34,34 @@ const ContentView = () => {
 
   return (
     <div className="content-container">
-
-<div>Popular {view}</div>
-
-      {view === VIEWS.MAIN ? 
-        <>
-        <Card 
-        </>  : null
-    }
-
-      {view === VIEWS. && dataArray.map((entry) => {
-        return (
-          
-         <Card entry={entry} type={view}/>
-        );
-      })}
-
-
+      <div>Popular {view}</div>
+      <div className="card-field">
+        {view === VIEWS.MAIN ? (
+          <>
+            <Card
+              poster={placeholderPoster}
+              title={'Popular Series'}
+              overlay={'SERIES'}
+              onClick={() => setView(VIEWS.SERIES)}
+            />
+            <Card
+              poster={placeholderPoster}
+              title={'Popular Movies'}
+              overlay={'MOVIES'}
+            />
+          </>
+        ) : (
+          dataArray.map((entry) => {
+            return (
+              <Card
+                poster={entry.images['Poster Art'].url || placeholderPoster}
+                title={entry.title}
+                defaultPoster={placeholderPoster}
+              />
+            );
+          })
+        )}
+      </div>
     </div>
   );
 };
