@@ -5,9 +5,8 @@ const Card = ({ poster, title, overlay, onClick, defaultPoster }) => {
     <div className="card-list" onClick={onClick}>
       <div className="card">
         <div className="poster">
-        <img className="poster-img" src={poster} />
           <div className="overlay" style={{backgroundImage: {poster}}}>{overlay}</div>
-          
+          <img className="poster-img" src={poster} }/>
         </div>
         <div className="title">{title}</div>
       </div>
